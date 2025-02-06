@@ -152,7 +152,8 @@ export default function Home() {
               <article key={product.id} className="product-card">
                 <img
                   src={product.image}
-                  alt={product.title}
+                  alt={`Image of ${product.title}`}
+                  title={`Product: ${product.title} | Price: $${product.price} | Category: ${product.category}`}
                   className="product-image"
                   loading="lazy"
                 />
@@ -163,6 +164,11 @@ export default function Home() {
                   <h2 className="product-title">{product.title}</h2>
                   <div className="product-category">{product.category}</div>
                   <div className="product-price">${product.price}</div>
+                </div>
+                <div className="product-tooltip">
+                  <strong>{product.title}</strong><br />
+                  Price: ${product.price}<br />
+                  Category: {product.category}
                 </div>
               </article>
             ))}
