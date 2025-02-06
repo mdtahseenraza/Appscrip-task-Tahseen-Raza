@@ -1,0 +1,66 @@
+# Code Structure and Implementation Details
+
+## Overview
+The project implements a modern e-commerce website using Next.js with plain CSS (no frameworks). The implementation focuses on clean code structure, SEO optimization, and responsive design.
+
+## Key Components
+
+### 1. Layout (app/layout.tsx)
+- Implements SEO meta tags and schema markup
+- Sets up the base HTML structure
+- Includes Google Fonts integration
+
+### 2. Main Page (app/page.tsx)
+- Uses the 'use client' directive for client-side interactivity
+- Implements product fetching from FakeStore API
+- Features sorting and filtering functionality
+- Responsive grid layout for products
+- Wishlist functionality with heart icons
+
+### 3. Styling (globals.css)
+- Custom CSS variables for consistent theming
+- Mobile-first responsive design
+- Clean and minimal aesthetic
+- Smooth transitions and hover effects
+- No external CSS frameworks used
+
+## Implementation Details
+
+### SEO Optimization
+- Proper meta tags and descriptions
+- Schema markup for rich snippets
+- Semantic HTML structure
+- Alt text for images
+- Proper heading hierarchy (h1, h2)
+
+### Responsive Design
+- Mobile-first approach
+- Flexible grid system
+- Responsive navigation
+- Adaptive layout for different screen sizes
+
+### Performance
+- Lazy loading for images
+- Server-side rendering with Next.js
+- Optimized asset loading
+- Minimal dependencies
+
+### Code Organization
+- Clean component structure
+- Consistent naming conventions
+- Modular CSS
+- Type safety with TypeScript
+
+### Filter Implementation
+- Customizable checkbox
+- Dropdown filters for categories
+- Price sorting functionality
+- Real-time filtering
+
+## Best Practices
+- Semantic HTML
+- Accessibility considerations
+- Clean code structure
+- Proper error handling
+- Type safety
+- Performance optimization
